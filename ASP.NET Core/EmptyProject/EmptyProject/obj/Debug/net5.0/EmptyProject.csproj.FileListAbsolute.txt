@@ -7,7 +7,6 @@ E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\Empt
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\EmptyProject.dll
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\ref\EmptyProject.dll
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\EmptyProject.pdb
-E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.csprojAssemblyReference.cache
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.GeneratedMSBuildEditorConfig.editorconfig
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.AssemblyInfoInputs.cache
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.AssemblyInfo.cs
@@ -21,3 +20,15 @@ E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Empt
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\ref\EmptyProject.dll
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.pdb
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.genruntimeconfig.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\EmptyProject.Views.dll
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\EmptyProject.Views.pdb
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.RazorAssemblyInfo.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.RazorAssemblyInfo.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.TagHelpers.input.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.TagHelpers.output.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.RazorCoreGenerate.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.RazorTargetAssemblyInfo.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.Views.pdb
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.csproj.CopyComplete
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.csprojAssemblyReference.cache
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Skills.cshtml.g.cs

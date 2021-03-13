@@ -6,7 +6,19 @@
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
+            defaultFilesOptions.DefaultFileNames.Clear();
+            defaultFilesOptions.DefaultFileNames.Add("htmlpage1.html");
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+			
+			/* peut être remplacé par 
+			 FileServerOptions fileServerOptions = new FileServerOptions();
+            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
+            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("Htmlpage1.html");
+            app.UseFileServer(fileServerOptions);
+			*/
+			
 
             app.UseStaticFiles();
 
