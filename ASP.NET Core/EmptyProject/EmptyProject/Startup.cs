@@ -19,7 +19,7 @@ namespace EmptyProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            services.AddSingleton<IPersonRepository,MockPersonRepository >();
+            services.AddSingleton<IPersonRepository, MockPersonRepository>();
             services.AddSingleton<ISkillRepository, MockSkillRepository>();
         }
 
@@ -30,10 +30,17 @@ namespace EmptyProject
             {
                 app.UseDeveloperExceptionPage();
             }
-       
+
             app.UseStaticFiles();
 
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
+
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute("default", "{controller=Learning}/{action=Skills}/{id?}");
+            //});
+
+            app.UseMvc();
 
             app.Run(async (context) =>
             {

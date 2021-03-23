@@ -1,0 +1,28 @@
+
+Jeudi 18 mars 2021
+- Multiple héritage avec interfaces 
+- Delegates (pointeur sur fonction de même type)
+- IENumerable<> : plus haut niveau d'abstraction juste parcourir (énumérer), ensuite ICollection avec insertion à la fin au début, compter, etc... , 
+puis IList ( insertion et remove au milieu) et IDictionnary<key, value>
+- HashSet et GetHashCode pour indexation (recherche rapide quasi immédiate)
+
+Vendredi 19 mars 2021
+- const (doit être initialisé à la compilation, ne change plus durant le runtime) 
+- readonly peut être initialisé au runtime
+structures = value type = pile(stack)    classes = reference type = heap(tas)
+value type stocke une valeur en mémoire, une référence stocke une référence (adresse) vers un objet en mémoire.
+value type supprimé en sortant du scope (portée), références type, c'est que l'adresse qui est détruite, l'objet du tas est détruit plus tard par le GBCollector.
+struct copy (real copy), class copy c'esu une nouvelle réf vers le même objet.
+structs pas de destructors, class oui.
+struct ne peut hériter d'une autre classe mais d'une interface oui
+LINQ : révisions de la plupart des fluent methods
++IEnumerable (coté client) Vs IQueryable (only required) 
+
+
+
+
+
+Samedi 20 mars 2021
+Design pattern : Etude Tête la première => Observateur IObservateur (enregistrerObservateur, supprimerObservateur, notifierObservateurs) ISujet(actualiser), IAffichage
+
+

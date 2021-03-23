@@ -1,16 +1,38 @@
-﻿@model EmptyProject.Models.Skill
+﻿@model LearningSkillsViewModel
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h1>@ViewBag.PageTitle</h1>
+@{
+    ViewBag.Title = Model.Title;
+}
 
-    <ul typeof="circle">@Model.Id.
-        <li>@Model.Name</li>
-        <li>@Model.Description</li>
-        <li>@Model.Commentary</li>
-    </ul>
-</body>
-</html>
+
+
+
+
+<pre>@Model.Title</pre>
+
+
+
+
+
+
+
+
+
+
+
+@*Specific page relative static files : *@
+
+  @* - Stylesheets *@
+
+@section SpecificPageStyles{
+
+ 
+}
+
+
+@* - Scripts JS *@
+
+@section SpecificPageScripts{
+
+
+}

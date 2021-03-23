@@ -1,13 +1,11 @@
-﻿using EmptyProject.Models;
-using EmptyProject.Models.Interfaces;
+﻿using EmptyProject.Models.Interfaces;
+using EmptyProject.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace EmptyProject.Controllers
 {
+    [Route("")]
+    [Route("Learning")]
     public class LearningController : Controller
     {
         private readonly IPersonRepository _personRepository;
@@ -18,14 +16,15 @@ namespace EmptyProject.Controllers
             _skillRepository = skillRepository;
         }
 
-
-
+        [Route("")]
+        [Route("Skill")]
+        [Route("Skills")]
         public ViewResult Skills()
         {
-            ViewBag.PageTitle = "Aujourd'hui : ";
-            Person person = _personRepository.GetPerson(1);
-            Skill skill = _skillRepository.GetSkill(1);
-            return View(skill);         
+            LearningSkillsViewModel viewModel = new LearningSkillsViewModel();
+            viewModel.Title = "Nouvelle compétence étudiée :";
+            return View(viewModel);   
+            //return View("~/Views/Home/MyHomePage.cshtml,viewModel);
         }
 
       
