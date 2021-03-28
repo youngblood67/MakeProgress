@@ -1,0 +1,11 @@
+Ajouter compétence + le temps utilisé
+
+Ajouter aptitude physique + la quantité
+
+
+tableau qui liste (affichage par compétence) modifier supprimer
+
+
+par la suite pour d'autres utilisateurs:
+ils envoie ce qu'ils veulent apprendr eet je leurs fourni une road map : objectifs à suivre : ils remplissent un questionnaire à l'inscription, puis demande utlérieur pour d'autres roadmap
+perspectives d'upgrade

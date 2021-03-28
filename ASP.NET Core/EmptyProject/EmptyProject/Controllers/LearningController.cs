@@ -10,23 +10,54 @@ namespace EmptyProject.Controllers
     {
         private readonly IPersonRepository _personRepository;
         private readonly ISkillRepository _skillRepository;
+        private LearningSkillsViewModel viewModel;
         public LearningController(IPersonRepository personRepository, ISkillRepository skillRepository)
         {
             _personRepository = personRepository;
             _skillRepository = skillRepository;
+           viewModel = new LearningSkillsViewModel();
         }
 
         [Route("")]
         [Route("Skill")]
-        [Route("Skills")]
-        public ViewResult Skills()
-        {
-            LearningSkillsViewModel viewModel = new LearningSkillsViewModel();
-            viewModel.Title = "Nouvelle compétence étudiée :";
+        [Route("s")]
+        public ViewResult Skill()
+        {       
+            viewModel.Title = "Acquisition de compétence :";
             return View(viewModel);   
             //return View("~/Views/Home/MyHomePage.cshtml,viewModel);
         }
 
-      
+     
+        [Route("Knowledge")]
+        [Route("k")]
+        public ViewResult Knowledge()
+        {
+            viewModel.Title = "Connaissances, culture générale :";
+            return View(viewModel);
+            //return View("~/Views/Home/MyHomePage.cshtml,viewModel);
+        }
+
+  
+        [Route("Cognitive")]
+        [Route("c")]
+        public ViewResult Cognitive()
+        {
+            viewModel.Title = "Aptitudes cognitives :";
+            return View(viewModel);
+            //return View("~/Views/Home/MyHomePage.cshtml,viewModel);
+        }
+
+
+        [Route("Physical")]
+        [Route("p")]
+        public ViewResult Physical()
+        {
+            viewModel.Title = "Aptitudes Physiques :";
+            return View(viewModel);
+            //return View("~/Views/Home/MyHomePage.cshtml,viewModel);
+        }
+
+
     }
 }

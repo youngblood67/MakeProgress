@@ -31,8 +31,11 @@ E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Empt
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.Views.pdb
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.csproj.CopyComplete
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\EmptyProject.csprojAssemblyReference.cache
-E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Skills.cshtml.g.cs
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\bin\Debug\net5.0\libman.json
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Cognitive.cshtml.g.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Knowledge.cshtml.g.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Physical.cshtml.g.cs
+E:\Git\MakeProgress\ASP.NET Core\EmptyProject\EmptyProject\obj\Debug\net5.0\Razor\Views\Learning\Skill.cshtml.g.cs
