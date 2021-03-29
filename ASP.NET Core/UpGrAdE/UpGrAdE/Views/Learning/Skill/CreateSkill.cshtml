@@ -1,0 +1,36 @@
+﻿@model CreateSkillViewModel
+
+@{
+    ViewBag.Title = Model.PageTitle;
+}
+
+
+<pre>@Model.PageTitle</pre>
+
+
+<form asp-controller="Learning" asp-action="CreateSkill" method="post">
+    <div>
+        <label asp-for="SkillName"></label>
+        <input type="text"  name="Name" value="" />
+    </div>
+  
+</form>
+
+
+
+@*Specific page relative static files : *@
+
+@* - Stylesheets *@
+
+@section SpecificPageStyles{
+
+
+}
+
+
+@* - Scripts JS *@
+
+@section SpecificPageScripts{
+
+
+}
