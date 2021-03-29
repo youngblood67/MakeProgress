@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    @RenderSection("SpecificPageStyles", required: false)
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom box-shadow mb-3">
+
+                <a class="navbar-brand" asp-controller="Movies" asp-action="Index">U<span style="color:red">p</span>GrA<span style="color:red">d</span>E</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+
+                    <div class="dropdown text-dark mx-3">
+                        <a class="dropdown-toggle text-decoration-none" data-toggle="dropdown">
+                            Compétences<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="CreateSkill">Créer</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="ShowSkill">Consulter</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="PurposeSkill">Objectifs</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown text-dark  mx-3">
+                        <a class="dropdown-toggle text-decoration-none" data-toggle="dropdown">
+                            Connaissances<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="CreateKnowledge">Créer</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="ShowKnowledge">Consulter</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="PurposeKnowledge">Objectifs</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown text-dark mx-3">
+                        <a class="dropdown-toggle text-decoration-none" data-toggle="dropdown">
+                            Capacités physiques<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="CreatePhysical">Créer</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="ShowPhysical">Consulter</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="PurposePhysical">Objectifs</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown text-dark  mx-3">
+                        <a class="dropdown-toggle text-decoration-none" data-toggle="dropdown">
+                            Capacités cognitives<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="CreateCognitive">Créer</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="ShowCognitive">Consulter</a></li>
+                            <li><a class="nav-link text-dark" asp-controller="Learning" asp-action="PurposeCognitive">Objectifs</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+        </header>
+
+
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - UpGrAdE App
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+    @RenderSection("SpecificPageScripts", required: false)
+</body>
+</html>
