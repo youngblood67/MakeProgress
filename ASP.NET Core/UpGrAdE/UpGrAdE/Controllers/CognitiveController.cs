@@ -3,8 +3,6 @@ using UpGrAdE.ViewModels;
 
 namespace UpGrAdE.Controllers
 {
-    [Route("")]
-    [Route("Learning")]
     public class CognitiveController : Controller
     {
         private readonly ShowCognitiveViewModel _showViewModel;
@@ -26,7 +24,7 @@ namespace UpGrAdE.Controllers
         public ViewResult ShowCognitive()
         {
             _showViewModel.PageTitle = "Aptitudes cognitives :";
-            return View("~/Views/Learning/Cognitive/ShowCognitive.cshtml", _showViewModel);
+            return View("~/Views/Cognitive/ShowCognitive.cshtml", _showViewModel);
         }
 
         [Route("CreateCognitive")]
@@ -34,7 +32,7 @@ namespace UpGrAdE.Controllers
         public ViewResult CreateCognitive()
         {
             _createViewModel.PageTitle = "Entrainement aux aptitudes cognitives :";
-            return View("~/Views/Learning/Cognitive/CreateCognitive.cshtml", _createViewModel);
+            return View("~/Views/Cognitive/CreateCognitive.cshtml", _createViewModel);
         }
 
         [Route("PurposeCognitive")]
@@ -42,7 +40,7 @@ namespace UpGrAdE.Controllers
         public ViewResult PurposeCognitive()
         {
             _purposeModel.PageTitle = "Objectifs cognitifs :";
-            return View("~/Views/Learning/Cognitive/PurposeCognitive.cshtml", _purposeModel);
+            return View("~/Views/Cognitive/PurposeCognitive.cshtml", _purposeModel);
         }
 
 

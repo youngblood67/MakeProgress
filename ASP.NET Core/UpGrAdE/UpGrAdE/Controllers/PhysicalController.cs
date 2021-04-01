@@ -3,8 +3,6 @@ using UpGrAdE.ViewModels;
 
 namespace UpGrAdE.Controllers
 {
-    [Route("")]
-    [Route("Learning")]
     public class PhysicalController : Controller
     {
         private readonly ShowPhysicalViewModel _showViewModel;
@@ -25,14 +23,14 @@ namespace UpGrAdE.Controllers
         public ViewResult ShowPhysical()
         {
             _showViewModel.PageTitle = "Aptitudes Physiques :";
-            return View("~/Views/Learning/Physical/ShowPhysical.cshtml", _showViewModel);
+            return View("~/Views/Physical/ShowPhysical.cshtml", _showViewModel);
         }
         [Route("CreatePhysical")]
         [Route("cp")]
         public ViewResult CreatePhysical()
         {
             _createViewModel.PageTitle = "Entrainement aux aptitudes Physiques :";
-            return View("~/Views/Learning/Physical/CreatePhysical.cshtml", _createViewModel);
+            return View("~/Views/Physical/CreatePhysical.cshtml", _createViewModel);
         }
 
         [Route("PurposePhysical")]
@@ -40,7 +38,7 @@ namespace UpGrAdE.Controllers
         public ViewResult PurposePhysical()
         {
             _purposeModel.PageTitle = "Objectifs physiques :";
-            return View("~/Views/Learning/Physical/PurposePhysical.cshtml", _purposeModel);
+            return View("~/Views/Physical/PurposePhysical.cshtml", _purposeModel);
         }
     }
 }

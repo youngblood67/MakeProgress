@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Skill : Learning
-    {     
-        public string Name { get; set; }
+    public class Skill : Upgrade
+    {
+        public List<string> SignificiantPoints { get; set; }
+
+
 
     }
 }

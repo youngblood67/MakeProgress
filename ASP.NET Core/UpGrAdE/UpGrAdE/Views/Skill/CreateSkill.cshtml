@@ -1,0 +1,46 @@
+﻿@model CreateSkillViewModel
+
+@{
+    ViewBag.Title = Model.PageTitle;
+}
+
+
+<pre>@Model.PageTitle</pre>
+
+
+<form asp-controller="Skill" asp-action="CreateSkill" method="post">
+
+    <div class="form-group">
+        <label asp-for="SkillTitle">Compétence que j'ai étudié : </label>
+        <input type="text" name="SkillTitle" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SignificiantPoints">Les points importants retenus : </label>
+        <textarea type="text" placeholder="un par ligne" name="SignificiantPoints"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Feedback">Notes, commentaires : </label>
+        <textarea type="text" name="Feedback"></textarea>
+    </div>
+    <button type="button" class="btn btn-outline-primary">Ajouter</button>
+
+</form>
+
+
+
+@*Specific page relative static files : *@
+
+@* - Stylesheets *@
+
+@section SpecificPageStyles{
+
+
+}
+
+
+@* - Scripts JS *@
+
+@section SpecificPageScripts{
+
+
+}

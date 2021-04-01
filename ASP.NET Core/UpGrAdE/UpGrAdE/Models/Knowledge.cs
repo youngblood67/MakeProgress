@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Knowledge : Learning
+    public class Knowledge : Upgrade
     { 
         public string Subject { get; set; }
    

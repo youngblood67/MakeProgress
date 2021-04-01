@@ -16,13 +16,19 @@ namespace UpGrAdE.Models.Repositories
             _skillsList = new List<Skill> {
                   new Skill {
                     Id = 1,
-                   Name = "Révision sur les bases ASP.NET MVC Core : View, Model, Controller",
-                   Description ="Utilisation d'un repository implémentant une interface pour permettre l'injection de dépendance.Configuration de Startup.cs AddSingleton<I, Rep>()"
+                   Title = "Révision sur les bases ASP.NET MVC Core : View, Model, Controller",
+                   SignificiantPoints  = new List<string>{
+                       "Utilisation d'un repository implémentant une interface pour permettre l'injection de dépendance",
+                       "Configuration de Startup.cs",
+                       "AddSingleton<I, Rep>()"
+                   }
                 },
                 new Skill {
                     Id = 2,
-                   Name = "Apprendre ASP.NET MVC Core : View, ViewBag, ViewData, ViewModel",
-                   Description = "Passage de données du controleur vers la vue"
+                   Title = "Apprendre ASP.NET MVC Core : View, ViewBag, ViewData, ViewModel",
+                     SignificiantPoints  = new List<string>{
+                   "Passage de données du controleur vers la vue"
+                     }
                 },
 
             };

@@ -3,8 +3,6 @@ using UpGrAdE.ViewModels;
 
 namespace UpGrAdE.Controllers
 {
-    [Route("")]
-    [Route("Learning")]
     public class SkillController : Controller
     {
         private readonly ShowSkillViewModel _showViewModel;
@@ -20,13 +18,12 @@ namespace UpGrAdE.Controllers
         }
 
 
-        [Route("")]
         [Route("ShowSkill")]
         [Route("ss")]
         public ViewResult ShowSkill()
         {
             _showViewModel.PageTitle = "Compétences :";
-            return View("~/Views/Learning/Skill/ShowSkill.cshtml", _showViewModel);
+            return View("~/Views/Skill/ShowSkill.cshtml", _showViewModel);
         }
 
         [Route("CreateSkill")]
@@ -35,7 +32,7 @@ namespace UpGrAdE.Controllers
         {
             _createViewModel.PageTitle = "Ajout de nouvelles compétences :";
 
-            return View("~/Views/Learning/Skill/CreateSkill.cshtml", _createViewModel);
+            return View("~/Views/Skill/CreateSkill.cshtml", _createViewModel);
         }
 
         [Route("PurposeSkill")]
@@ -43,7 +40,7 @@ namespace UpGrAdE.Controllers
         public ViewResult PurposeSkill()
         {
             _purposeModel.PageTitle = "Objectifs d'acquisition de compétences :";
-            return View("~/Views/Learning/Skill/PurposeSkill.cshtml", _purposeModel);
+            return View("~/Views/Skill/PurposeSkill.cshtml", _purposeModel);
         }
 
 

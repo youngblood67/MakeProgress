@@ -7,6 +7,6 @@ namespace UpGrAdE.Models
 {
     public class Journey
     {
-        public List<Learning> Learnings { get; set; }
+        public List<Upgrade> Upgrades { get; set; }
     }
 }

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Ability : Learning
+    public class Ability : Upgrade
     {
-        public string Name { get; set; }
+    
     }
 }

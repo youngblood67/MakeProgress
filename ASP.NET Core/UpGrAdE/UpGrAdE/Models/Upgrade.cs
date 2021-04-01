@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Learning
+    public class Upgrade
     {
         public int Id { get; set; }
 
-        public string Description { get; set; }
-        public string Commentary { get; set; }
+        public string Title { get; set; }
+
+        public string FeedBack { get; set; }
 
 
     }

@@ -3,8 +3,6 @@ using UpGrAdE.ViewModels;
 
 namespace UpGrAdE.Controllers
 {
-    [Route("")]
-    [Route("Learning")]
     public class KnowledgeController : Controller
     {
         private readonly ShowKnowledgeViewModel _showViewModel;
@@ -20,14 +18,12 @@ namespace UpGrAdE.Controllers
         }
 
 
-        /////////CONNAISSANCES\\\\\\\\\\\\\
-
         [Route("ShowKnowledge")]
         [Route("sk")]
         public ViewResult ShowKnowledge()
         {
             _showViewModel.PageTitle = "Connaissances, culture générale :";
-            return View("~/Views/Learning/Knowledge/ShowKnowledge.cshtml", _showViewModel);
+            return View("~/Views/Knowledge/ShowKnowledge.cshtml", _showViewModel);
         }
 
         [Route("CreateKnowledge")]
@@ -35,7 +31,7 @@ namespace UpGrAdE.Controllers
         public ViewResult CreateKnowledge()
         {
             _createViewModel.PageTitle = "Ajout de nouvelles connaissances";
-            return View("~/Views/Learning/Knowledge/CreateKnowledge.cshtml", _createViewModel);
+            return View("~/Views/Knowledge/CreateKnowledge.cshtml", _createViewModel);
         }
 
         [Route("PurposeKnowledge")]
@@ -43,7 +39,7 @@ namespace UpGrAdE.Controllers
         public ViewResult PurposeKnowledge()
         {
             _purposeModel.PageTitle = "Objectifs d'acquisition des connaissances :";
-            return View("~/Views/Learning/Knowledge/PurposeKnowledge.cshtml", _purposeModel);
+            return View("~/Views/Knowledge/PurposeKnowledge.cshtml", _purposeModel);
         }
 
     }
