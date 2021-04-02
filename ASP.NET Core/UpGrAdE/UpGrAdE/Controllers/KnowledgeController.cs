@@ -6,14 +6,14 @@ namespace UpGrAdE.Controllers
     public class KnowledgeController : Controller
     {
         private readonly ShowKnowledgeViewModel _showViewModel;
-        private readonly CreateKnowledgeViewModel _createViewModel;
+        private readonly AddKnowledgeViewModel _createViewModel;
         private readonly PurposeKnowledgeViewModel _purposeModel;
 
 
         public KnowledgeController()
         {
             _showViewModel = new ShowKnowledgeViewModel();
-            _createViewModel = new CreateKnowledgeViewModel();
+            _createViewModel = new AddKnowledgeViewModel();
             _purposeModel = new PurposeKnowledgeViewModel();
         }
 
@@ -26,12 +26,12 @@ namespace UpGrAdE.Controllers
             return View("~/Views/Knowledge/ShowKnowledge.cshtml", _showViewModel);
         }
 
-        [Route("CreateKnowledge")]
+        [Route("AddKnowledge")]
         [Route("ck")]
-        public ViewResult CreateKnowledge()
+        public ViewResult AddKnowledge()
         {
             _createViewModel.PageTitle = "Ajout de nouvelles connaissances";
-            return View("~/Views/Knowledge/CreateKnowledge.cshtml", _createViewModel);
+            return View("~/Views/Knowledge/AddKnowledge.cshtml", _createViewModel);
         }
 
         [Route("PurposeKnowledge")]

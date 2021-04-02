@@ -11,6 +11,6 @@ namespace UpGrAdE.Models.Interfaces
 
         List<Skill> GetSkills();
 
-        List<Skill> GetSkillsByCategory(string category);
+        void Add(Skill skill);
     }
 }

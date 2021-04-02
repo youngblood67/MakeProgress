@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.ViewModels
 {
-    public class CreateKnowledgeViewModel
+    public class AddCognitiveViewModel
     {
         public string PageTitle { get; set; }
 

@@ -8,6 +8,15 @@
 <pre>@Model.PageTitle</pre>
 
 
+<div class="jumbotron">
+    <ul>
+        @foreach (var item in Model.Skills)
+        {
+            <li>@item.Title</li>
+        }
+    </ul>
+</div>
+
 
 
 

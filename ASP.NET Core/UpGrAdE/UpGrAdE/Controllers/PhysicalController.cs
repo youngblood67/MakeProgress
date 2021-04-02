@@ -6,14 +6,14 @@ namespace UpGrAdE.Controllers
     public class PhysicalController : Controller
     {
         private readonly ShowPhysicalViewModel _showViewModel;
-        private readonly CreatePhysicalViewModel _createViewModel;
+        private readonly AddPhysicalViewModel _createViewModel;
         private readonly PurposePhysicalViewModel _purposeModel;
 
 
         public PhysicalController()
         {
             _showViewModel = new ShowPhysicalViewModel();
-            _createViewModel = new CreatePhysicalViewModel();
+            _createViewModel = new AddPhysicalViewModel();
             _purposeModel = new PurposePhysicalViewModel();
         }
 
@@ -25,12 +25,12 @@ namespace UpGrAdE.Controllers
             _showViewModel.PageTitle = "Aptitudes Physiques :";
             return View("~/Views/Physical/ShowPhysical.cshtml", _showViewModel);
         }
-        [Route("CreatePhysical")]
+        [Route("AddPhysical")]
         [Route("cp")]
-        public ViewResult CreatePhysical()
+        public ViewResult AddPhysical()
         {
             _createViewModel.PageTitle = "Entrainement aux aptitudes Physiques :";
-            return View("~/Views/Physical/CreatePhysical.cshtml", _createViewModel);
+            return View("~/Views/Physical/AddPhysical.cshtml", _createViewModel);
         }
 
         [Route("PurposePhysical")]

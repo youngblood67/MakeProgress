@@ -9,6 +9,12 @@ namespace UpGrAdE.Models
     {
         public List<string> SignificiantPoints { get; set; }
 
+        public Skill(string title, List<string> significiantPoints, string feedback) : base(title, feedback)
+        {
+            this.SignificiantPoints = significiantPoints;
+        }
+
+
 
 
     }

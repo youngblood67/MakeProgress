@@ -1,4 +1,4 @@
-﻿@model CreateSkillViewModel
+﻿@model AddSkillViewModel
 
 @{
     ViewBag.Title = Model.PageTitle;
@@ -8,7 +8,7 @@
 <pre>@Model.PageTitle</pre>
 
 
-<form asp-controller="Skill" asp-action="CreateSkill" method="post">
+<form asp-controller="Skill" asp-action="AddSkill" method="post">
 
     <div class="form-group">
         <label asp-for="SkillTitle">Compétence que j'ai étudié : </label>
@@ -22,7 +22,7 @@
         <label asp-for="Feedback">Notes, commentaires : </label>
         <textarea type="text" name="Feedback"></textarea>
     </div>
-    <button type="button" class="btn btn-outline-primary">Ajouter</button>
+    <button type="submit" class="btn btn-outline-primary">Ajouter</button>
 
 </form>
 

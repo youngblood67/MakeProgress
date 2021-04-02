@@ -6,14 +6,14 @@ namespace UpGrAdE.Controllers
     public class CognitiveController : Controller
     {
         private readonly ShowCognitiveViewModel _showViewModel;
-        private readonly CreateCognitiveViewModel _createViewModel;
+        private readonly AddCognitiveViewModel _createViewModel;
         private readonly PurposeCognitiveViewModel _purposeModel;
 
 
         public CognitiveController()
         {
             _showViewModel = new ShowCognitiveViewModel();
-            _createViewModel = new CreateCognitiveViewModel();
+            _createViewModel = new AddCognitiveViewModel();
             _purposeModel = new PurposeCognitiveViewModel();
         }
 
@@ -27,12 +27,12 @@ namespace UpGrAdE.Controllers
             return View("~/Views/Cognitive/ShowCognitive.cshtml", _showViewModel);
         }
 
-        [Route("CreateCognitive")]
+        [Route("AddCognitive")]
         [Route("cc")]
-        public ViewResult CreateCognitive()
+        public ViewResult AddCognitive()
         {
             _createViewModel.PageTitle = "Entrainement aux aptitudes cognitives :";
-            return View("~/Views/Cognitive/CreateCognitive.cshtml", _createViewModel);
+            return View("~/Views/Cognitive/AddCognitive.cshtml", _createViewModel);
         }
 
         [Route("PurposeCognitive")]

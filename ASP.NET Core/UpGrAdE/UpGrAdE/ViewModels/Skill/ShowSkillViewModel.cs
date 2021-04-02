@@ -10,6 +10,7 @@ namespace UpGrAdE.ViewModels
     {
         public string PageTitle { get; set; }
 
+        public List<Skill> Skills { get; set; } = new List<Skill>();
        
     }
 }

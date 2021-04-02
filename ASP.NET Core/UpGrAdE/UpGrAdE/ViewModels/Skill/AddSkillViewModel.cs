@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.ViewModels
 {
-    public class CreateCognitiveViewModel
+    public class AddSkillViewModel
     {
         public string PageTitle { get; set; }
 
-       
+        public string SkillTitle { get; set; }
+        public string Feedback { get; set; }
+
+        public string SignificiantPoints { get; set; }
     }
 }

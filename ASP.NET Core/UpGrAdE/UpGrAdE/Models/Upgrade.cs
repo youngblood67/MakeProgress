@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Upgrade
+    public abstract class Upgrade
     {
         public int Id { get; set; }
 
@@ -13,6 +13,26 @@ namespace UpGrAdE.Models
 
         public string FeedBack { get; set; }
 
+
+        public Upgrade()
+        {
+            this.Title ="";
+            this.FeedBack = "";
+
+        }
+        public Upgrade(string title, string feedback)
+        {
+            this.Title = title;
+            this.FeedBack = feedback;
+
+        }
+        public Upgrade(int id, string title, string feedback)
+        {
+            this.Id = id;
+            this.Title = title;
+            this.FeedBack = feedback;
+
+        }
 
     }
 }

@@ -14,24 +14,27 @@ namespace UpGrAdE.Models.Repositories
         public MockSkillRepository()
         {
             _skillsList = new List<Skill> {
-                  new Skill {
-                    Id = 1,
-                   Title = "Révision sur les bases ASP.NET MVC Core : View, Model, Controller",
-                   SignificiantPoints  = new List<string>{
+                  new Skill(
+                   "Révision sur les bases ASP.NET MVC Core : View, Model, Controller",
+                 new List<string>{
                        "Utilisation d'un repository implémentant une interface pour permettre l'injection de dépendance",
                        "Configuration de Startup.cs",
                        "AddSingleton<I, Rep>()"
-                   }
-                },
-                new Skill {
-                    Id = 2,
-                   Title = "Apprendre ASP.NET MVC Core : View, ViewBag, ViewData, ViewModel",
-                     SignificiantPoints  = new List<string>{
-                   "Passage de données du controleur vers la vue"
-                     }
-                },
+                   },
+                  "Super cool"),
 
-            };
+                new Skill (
+                  "Apprendre ASP.NET MVC Core : View, ViewBag, ViewData, ViewModel",
+                   new List<string>{
+                   "Passage de données du controleur vers la vue"
+                     },
+                   "Super cool")
+             };
+        }
+
+        public void Add(Skill skill)
+        {
+            _skillsList.Add(skill);
         }
 
         public Skill GetSkill(int id)
