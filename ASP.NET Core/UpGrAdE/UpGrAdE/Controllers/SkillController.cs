@@ -10,7 +10,7 @@ namespace UpGrAdE.Controllers
     public class SkillController : Controller
     {
         private readonly ShowSkillViewModel _showViewModel;
-        private readonly AddSkillViewModel _createViewModel;
+        private readonly AddSkillViewModel _addViewModel;
         private readonly PurposeSkillViewModel _purposeModel;
         private ISkillRepository _skillRepository;
 
@@ -18,14 +18,13 @@ namespace UpGrAdE.Controllers
         public SkillController(ISkillRepository skillRepository)
         {
             _showViewModel = new ShowSkillViewModel();
-            _createViewModel = new AddSkillViewModel();
+            _addViewModel = new AddSkillViewModel();
             _purposeModel = new PurposeSkillViewModel();
             _skillRepository = skillRepository;
         }
 
 
         [Route("ShowSkill")]
-        [Route("ss")]
         public ViewResult ShowSkill()
         {
             _showViewModel.PageTitle = "Compétences :";
@@ -34,16 +33,14 @@ namespace UpGrAdE.Controllers
 
         [HttpGet]
         [Route("AddSkill")]
-        [Route("cs")]
-        public ViewResult AddSkill()
+        public ViewResult CreateSkill()
         {
-            _createViewModel.PageTitle = "Ajout de nouvelles compétences :";
-            return View("~/Views/Skill/AddSkill.cshtml", _createViewModel);
+            _addViewModel.PageTitle = "Ajout de nouvelles compétences :";
+            return View("~/Views/Skill/AddSkill.cshtml", _addViewModel);
         }
 
         [HttpPost]
         [Route("AddSkill")]
-        [Route("cs")]
         public ViewResult AddSkill(string? skillTitle, string? significiantPoints, string? feedback)
         {
             _showViewModel.PageTitle = "Nouvelle compétence ajoutée :";
@@ -64,7 +61,6 @@ namespace UpGrAdE.Controllers
         }
 
         [Route("PurposeSkill")]
-        [Route("ps")]
         public ViewResult PurposeSkill()
         {
             _purposeModel.PageTitle = "Objectifs d'acquisition de compétences :";
