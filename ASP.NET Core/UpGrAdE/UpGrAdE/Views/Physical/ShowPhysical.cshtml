@@ -8,6 +8,14 @@
 <pre>@Model.PageTitle</pre>
 
 
+<div class="jumbotron">
+    <ul>
+        @foreach (var item in Model.PhysicalAbilities)
+        {
+            <li>@item.Title</li>
+        }
+    </ul>
+</div>
 
 
 

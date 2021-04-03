@@ -33,7 +33,7 @@ namespace UpGrAdE.Controllers
 
         [HttpGet]
         [Route("AddSkill")]
-        public ViewResult CreateSkill()
+        public ViewResult AddSkill()
         {
             _addViewModel.PageTitle = "Ajout de nouvelles compétences :";
             return View("~/Views/Skill/AddSkill.cshtml", _addViewModel);

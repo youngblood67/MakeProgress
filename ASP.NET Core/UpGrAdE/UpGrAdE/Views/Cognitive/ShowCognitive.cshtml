@@ -7,7 +7,14 @@
 
 <pre>@Model.PageTitle</pre>
 
-
+<<div class="jumbotron">
+    <ul>
+        @foreach (var item in Model.CognitiveAbilities)
+        {
+            <li>@item.Title</li>
+        }
+    </ul>
+</div>
 
 
 

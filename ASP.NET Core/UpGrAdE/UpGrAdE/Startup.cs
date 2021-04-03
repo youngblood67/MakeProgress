@@ -19,8 +19,18 @@ namespace EmptyProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            services.AddSingleton<IPersonRepository, MockPersonRepository>();
-            services.AddSingleton<ISkillRepository, MockSkillRepository>();
+
+            //Test
+            // services.AddSingleton<IPersonRepository, MockPersonRepository>();
+            // services.AddSingleton<ISkillRepository, MockSkillRepository>();
+
+
+            services.AddSingleton<ICognitiveRepository, CognitiveRepository>();
+            services.AddSingleton<IKnowledgeRepository, KnowledgeRepository>();
+            services.AddSingleton<IPhysicalRepository, PhysicalRepository>();
+            services.AddSingleton<ISkillRepository, SkillRepository>();
+            services.AddSingleton<IPersonRepository, PersonRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

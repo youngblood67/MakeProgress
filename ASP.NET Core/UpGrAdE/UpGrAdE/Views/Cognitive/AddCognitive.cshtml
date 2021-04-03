@@ -5,9 +5,25 @@
 }
 
 
-<pre>@Model.PageTitle</pre>
-
-
+<div class="card">
+    <div class="card-header">
+        Quelle exercice physiques avez vous effectué ?
+    </div>
+    <div class="card-body">
+        <form asp-controller="Skill" asp-action="CreateSkill" method="post">
+            <div class="form-group">
+                <label asp-for="SkillTitle">Donnez un titre, une description : </label>
+                <input class="form-control" type="text" name="SkillTitle" required />
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Feedback">Notes, commentaires : </label>
+                <textarea class="form-control" type="text" name="Feedback"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Ajouter</button>
+        </form>
+    </div>
+</div>
 
 
 

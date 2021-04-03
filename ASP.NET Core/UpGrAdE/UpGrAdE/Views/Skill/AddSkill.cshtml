@@ -11,18 +11,17 @@
     </div>
     <div class="card-body">
         <form asp-controller="Skill" asp-action="CreateSkill" method="post">
-
             <div class="form-group">
                 <label asp-for="SkillTitle">Donnez un titre, une description : </label>
-                <input type="text" name="SkillTitle" required />
+                <input class="form-control" type="text" name="SkillTitle" required />
             </div>
             <div class="form-group">
                 <label asp-for="SignificiantPoints">Les points importants retenus : <sup>(1 par ligne)</sup> </label>
-                <textarea type="text" name="SignificiantPoints"></textarea>
+                <textarea class="form-control" type="text" name="SignificiantPoints"></textarea>
             </div>
             <div class="form-group">
                 <label asp-for="Feedback">Notes, commentaires : </label>
-                <textarea type="text" name="Feedback"></textarea>
+                <textarea class="form-control" type="text" name="Feedback"></textarea>
             </div>
             <button type="submit" class="btn btn-outline-primary">Ajouter</button>
         </form>

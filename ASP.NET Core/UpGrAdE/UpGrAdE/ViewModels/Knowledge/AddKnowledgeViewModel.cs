@@ -10,6 +10,10 @@ namespace UpGrAdE.ViewModels
     {
         public string PageTitle { get; set; }
 
-       
+        public string KnowledgeTitle { get; set; }
+        public string Feedback { get; set; }
+
+        public string SignificiantPoints { get; set; }
     }
 }
+

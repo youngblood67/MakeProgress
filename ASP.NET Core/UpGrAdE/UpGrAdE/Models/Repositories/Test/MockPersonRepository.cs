@@ -37,6 +37,12 @@ namespace UpGrAdE.Models.Repositories
                 }
             };
         }
+
+        public void Add(Person person)
+        {
+            throw new NotImplementedException();
+        }
+
         List<Person> IPersonRepository.GetPeople()
         {
             return _peopleList;

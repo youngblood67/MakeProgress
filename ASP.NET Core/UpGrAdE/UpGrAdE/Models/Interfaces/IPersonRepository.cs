@@ -10,5 +10,7 @@ namespace UpGrAdE.Models.Interfaces
         Person GetPerson(int id);
 
         List<Person> GetPeople();
+
+        void Add(Person person);
     }
 }

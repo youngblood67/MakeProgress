@@ -92,7 +92,6 @@ E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Physic
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Skill\PurposeSkill.cshtml.g.cs
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Skill\ShowSkill.cshtml.g.cs
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Home.cshtml.g.cs
-E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\UpGrAdE.csprojAssemblyReference.cache
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Cognitive\AddCognitive.cshtml.g.cs
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Knowledge\AddKnowledge.cshtml.g.cs
 E:\Git\Projects\ASP.NET Core\UpGrAdE\UpGrAdE\obj\Debug\net5.0\Razor\Views\Physical\AddPhysical.cshtml.g.cs

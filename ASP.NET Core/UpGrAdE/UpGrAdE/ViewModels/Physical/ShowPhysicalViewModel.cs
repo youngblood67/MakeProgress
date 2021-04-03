@@ -10,6 +10,6 @@ namespace UpGrAdE.ViewModels
     {
         public string PageTitle { get; set; }
 
-       
+        public List<PhysicalAbility> PhysicalAbilities { get; set; } = new List<PhysicalAbility>();
     }
 }

@@ -10,6 +10,6 @@ namespace UpGrAdE.ViewModels
     {
         public string PageTitle { get; set; }
 
-       
+        public List<CognitiveAbility> CognitiveAbilities { get; set; } = new List<CognitiveAbility>();
     }
 }

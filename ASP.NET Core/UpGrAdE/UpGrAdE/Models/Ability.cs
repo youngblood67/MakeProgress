@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace UpGrAdE.Models
 {
-    public class Ability : Upgrade
+    public abstract class Ability : Upgrade
     {
+        public Ability(string title, string feedback) : base(title, feedback) { }
     
     }
 }

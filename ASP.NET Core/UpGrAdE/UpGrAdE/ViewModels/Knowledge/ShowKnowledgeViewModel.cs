@@ -10,6 +10,7 @@ namespace UpGrAdE.ViewModels
     {
         public string PageTitle { get; set; }
 
-       
+        public List<Knowledge> Knowledges { get; set; } = new List<Knowledge>();
+
     }
 }

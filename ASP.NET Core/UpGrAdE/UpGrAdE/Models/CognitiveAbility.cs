@@ -7,5 +7,6 @@ namespace UpGrAdE.Models
 {
     public class CognitiveAbility : Ability
     {
+        public CognitiveAbility(string title, string feedback) : base(title, feedback) { }
     }
 }

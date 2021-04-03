@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 namespace UpGrAdE.Models
 {
     public class Knowledge : Upgrade
-    { 
-        public string Subject { get; set; }
-   
+    {
+        public List<string> SignificiantPoints { get; set; }
+
+        public Knowledge(string title, List<string> significiantPoints, string feedback) : base(title, feedback)
+        {
+            this.SignificiantPoints = significiantPoints;
+        }
     }
 }
