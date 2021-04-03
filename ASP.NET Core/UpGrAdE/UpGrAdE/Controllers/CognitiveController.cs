@@ -42,7 +42,7 @@ namespace UpGrAdE.Controllers
         [Route("AddCognitive")]
         public ViewResult AddPhysical(string? skillTitle, int nbRepetitions, string feedback)
         {
-            _showViewModel.PageTitle = "Nouvelle aptitude physique entrainée :";
+            _showViewModel.PageTitle = "Nouvelle aptitude cognitive exercée :";
 
             CognitiveAbility cognitiveAbility = new CognitiveAbility(skillTitle, feedback);
             _cognitiveRepository.Add(cognitiveAbility);
